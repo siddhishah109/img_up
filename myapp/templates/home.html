@@ -20,6 +20,18 @@
                 <input  type="submit" class="btn bg-dark-subtle" value="upload">
             </form>
         </div>
+        <div class="row">
+            {% for x in img %}
+            <div class="col-sm-4">
+                <div class="card m-2">
+                    <img src="{{x.photo.url}}" alt="" class="card-img-top" height="200px">
+                </div>
+            </div>
+
+
+            {% endfor%}
+
+        </div>
     </div>
 
 

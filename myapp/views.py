@@ -9,4 +9,5 @@ def home(request):
         if form.is_valid():
             form.save()
     form= imageform()
-    return render(request,'home.html',{'form':form})
+    img=image.objects.all()
+    return render(request,'home.html',{'form':form,'img':img})
